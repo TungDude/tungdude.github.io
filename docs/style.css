@@ -102,7 +102,9 @@ main h1 {
 
 @media (min-width: 912px) {
 .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 0.4fr);
+    justify-content: center;
+    justify-items: center;
 }
 }
 
