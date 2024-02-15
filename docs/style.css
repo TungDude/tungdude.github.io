@@ -6,15 +6,154 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: pink;
+    color: #0e1238;
+}
+
 .center {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 10px;
 }
-  
-body {
-    font-family: 'Roboto Slab', sans-serif;
-    background-color: #d1d2d3;
-    color: #0e1238;
+
+.catGIF {
+    display: inline-block;
+    width: 15%;
+    margin: 5px;
+}
+
+.faceIMG {
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.faceAnimation {
+    animation: spin 0.4s;
+}
+
+.Money {
+    font-size: 4vw;
+    animation: shake 0.8s;
+}
+
+.headerDIV {
+    border-bottom: 4px dashed rgb(235, 43, 149);
+}
+
+.tapMsg {
+    rotate: -15deg;
+    margin-top: -5px;
+    font-size: 3vw;
+    animation: taptap 2s;
+    animation-iteration-count: infinite;
+}
+
+.pointPopUp {
+    position: absolute;
+    font-size: 4.5vw;
+    opacity: 0;
+    animation: fadeOut 1s;
+}
+
+.buyButton {
+    width: 40%;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    padding: 0 0 30px 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 30px 50px;
+}
+
+.cards .cards-inner {
+    display: flex;
+    background-color: #fafcfd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.4s;
+    flex-direction: column;
+    min-width: 200px;
+}
+    
+.cards .cards-inner:hover {
+    box-shadow: 0 5px 20px rgba(1, 45, 128, 0.5);
+}
+
+/* @media (min-width: 600px) {
+main h1 {
+    max-width: 500px;
+    margin: auto;
+}
+
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+} */
+
+@media (min-width: 912px) {
+.cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+}
+
+@keyframes taptap { 
+    50% {
+        font-size: 5vw; 
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes shake { 
+    0%{ 
+        transform: translateX(0) 
+    } 
+    25%{ 
+        transform: translateX(25px); 
+    } 
+        
+    50%{ 
+        transform: translateX(-25px); 
+    } 
+    100%{ 
+        transform: translateX(0px); 
+    } 
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        width: 90%;
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
