@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarn's Cat Farm</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="tapAnimated()">
+
+    <div class="center">
+        <div class="headerDIV">
+            <img class="catGIF" src="pics/cutecats.gif">
+            <h1 style="font-weight: bold; display: inline; font-size: 5vw;">Tarn's Cat Farm</h1>
+            <img class="catGIF" src="pics/cutecats.gif">
+        </div>
+        <h3 id="money" class="Money">💸 Money - $0</h3>
+        <img id="tarnFace" class="faceIMG faceAnimation" src="pics/1.png" onclick="faceClick()">
+        <p id="taptap" class="tapMsg">Tap Tap!</p>
+        <p style="border: 2px dashed black">$1000 for 1 cat</p>
+        <button class="buyButton" onclick="buyCat()">Buy a Cat! 😽</button>
+        <div class="container">
+            <div class="cards" id="catContainer">
+
+            </div>
+        </div>
+        <div id="popUpMaster">
+            
+        </div>
+
+    </div>
     
 </body>
 </html>
