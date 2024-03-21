@@ -83,8 +83,9 @@ async function buyCat() {
             catCardId += 1;
             divInner.appendChild(divImg);
             divInner.appendChild(nameP);
-            centerDiv.appendChild(nameButton);
-            divInner.appendChild(centerDiv);
+            // centerDiv.appendChild(nameButton);
+            // divInner.appendChild(centerDiv);
+            divInner.appendChild(nameButton);
             catContainer.appendChild(divInner);
             money.innerHTML = "💸 Money - $" + (currentMoney - 1000).toString();
         }
