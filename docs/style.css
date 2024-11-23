@@ -22,12 +22,12 @@ body {
 
 .catGIF {
     display: inline-block;
-    width: 15%;
+    width: 84px;
     margin: 5px;
 }
 
 .faceIMG {
-    width: 75%;
+    width: 256px;
     margin-bottom: 10px;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .Money {
-    font-size: 4vw;
+    font-size: 24px;
     animation: shake 0.8s;
 }
 
@@ -47,21 +47,22 @@ body {
 .tapMsg {
     rotate: -15deg;
     margin-top: -5px;
-    font-size: 3vw;
+    font-size: 18px;
     animation: taptap 2s;
     animation-iteration-count: infinite;
 }
 
 .pointPopUp {
     position: absolute;
-    font-size: 4.5vw;
+    font-size: 48px;
     opacity: 0;
     animation: fadeOut 1s;
 }
 
 .buyButton {
+    height: 48px;
     width: 40%;
-    font-size: 3vw;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -72,7 +73,6 @@ body {
 .cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5%;
     padding: 0 30px 50px;
 }
 
@@ -84,6 +84,7 @@ body {
     transition: box-shadow 0.4s;
     flex-direction: column;
     max-height: 500px;
+    width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -109,6 +110,7 @@ main h1 {
     grid-template-columns: repeat(3, 0.4fr);
     justify-content: center;
     justify-items: center;
+    gap: 5%;
 }
 }
 
@@ -121,7 +123,7 @@ main h1 {
 
 @keyframes taptap { 
     50% {
-        font-size: 5vw; 
+        font-size: 36px; 
     }
 }
 
@@ -157,7 +159,7 @@ main h1 {
         transform:rotate(0deg);
     }
     50% {
-        width: 90%;
+        width: 384px;
     }
     100% {
         transform:rotate(360deg);
