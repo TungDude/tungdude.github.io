@@ -27,6 +27,7 @@ async function faceClick(){
     h2head += 1;
     h2tail += 1;
     incMoney = Math.floor((Math.random() * 81) + 20);
+    // incMoney = 10000; // for testing
     bot = Math.floor((Math.random() * 41) + 40);
     right = Math.floor((Math.random() * 41) + 30);
 
@@ -39,6 +40,7 @@ async function faceClick(){
     Popup.className = "pointPopUp";
     Popup.style.bottom = bot.toString() + "%";
     Popup.style.right = right.toString() + "%";
+    Popup.style.color = "green";
     Popup.innerHTML = "+ $" + incMoney.toString();
     popUpContainer.appendChild(Popup);
 
